@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyecto Final Integrador - Talento Tech - Carrito de Compras</title>
+
+    <!-- Importamos fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icono para la pagina web -->
+    <link rel="icon" type="image/png" href="./iconos/anadir-al-carrito.png" />
+
+    <!-- Importamos archivo de hojas de estilos - css -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <header>
+      <h1>Tienda de Compras</h1>
+      <!-- Titulo del sitio web -->
+      <!-- icono del carrito, con su enlace -->
+      <a href="./carrito.html" class="icono-carrito"
+        ><img
+          src="./iconos/carrito-de-compras.png"
+          alt="icono-carrito"
+          width="30"
+        />
+        <span id="contador-carrito">0</span>
+      </a>
+    </header>
+
+    <!-- Barra de navegacion principal -->
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Contactos</a></li>
+      </ul>
+    </nav>
+
+    <!-- Seccion de Productos -->
+
+    <section id="productos" class="productos">
+      <!-- productos con descripcion, precio y boton para agregar el carrito -->
+      <article class="producto">
+        <h2>Producto 1</h2>
+        <p>Descripcion del producto</p>
+        <p class="precio">$100</p>
+        <button onclick="agregarAlCarrito('Producto 1', 100) ">Agregar</button>
+      </article>
+
+      <!-- productos con descripcion, precio y boton para agregar el carrito -->
+      <article class="producto">
+        <h2>Producto 2</h2>
+        <p>Descripcion del producto</p>
+        <p class="precio">$200</p>
+        <button onclick="agregarAlCarrito('Producto 2', 200) ">Agregar</button>
+      </article>
+    </section>
+
+    <!-- Importamos archivo JavaScript -->
+    <script src="./app.js"></script>
+  </body>
+</html>

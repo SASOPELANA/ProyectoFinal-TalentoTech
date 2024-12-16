@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carrito</title>
+
+    <!-- Importamos fonts de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icono para la pagina web -->
+    <link rel="icon" type="image/png" href="./iconos/verificar.png" />
+
+    <!-- Importamos estilos css -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Encabezado del carrito -->
+    <header>
+      <h1>Carrito de Compras</h1>
+      <a href="./index.html" class="icono-carrito">
+        <img src="./iconos/product-return.png" alt="icono-volver" width="20" />
+        Volver</a
+      >
+    </header>
+
+    <!-- seccion principal del carrito -->
+    <section id="carrito" class="productos">
+      <h2>Tu carrito</h2>
+
+      <div id="lista-carrito">
+        <!--  Lista de productos -->
+        <button onclick="realizarCompra()">Finalizar la compra.</button>
+        <!-- boton de compra -->
+      </div>
+    </section>
+
+    <!-- Importamos archivo JavaScript -->
+    <script src="./carrito.js"></script>
+  </body>
+</html>
