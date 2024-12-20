@@ -1,0 +1,78 @@
+/* Asegúrate de que el contenedor principal tenga una altura mínima del 100% */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* El contenedor principal debe ocupar todo el espacio disponible */
+  body {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(140, 140, 145);
+  }
+  
+  /* --- Encabezado (Header) --- */
+  header {
+    display: flex; /* Distribución flexible */
+    justify-content: space-between; /* Elementos separados */
+    align-items: center; /* Alineación vertical */
+    background: #333; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+  }
+  
+  header h1 {
+    font-size: 24px; /* Tamaño del título */
+  }
+  
+  .icono-carrito {
+    color: white; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  /* --- Navegación principal --- */
+  nav ul {
+    list-style-type: none; /* Sin viñetas */
+    background: #555; /* Fondo oscuro */
+    padding: 10px; /* Espaciado interno */
+  }
+  
+  nav ul li {
+    display: inline; /* Elementos en línea */
+    margin-right: 15px; /* Separación entre enlaces */
+  }
+  
+  nav ul li a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  nav ul li a:hover {
+    color: rgb(78, 209, 91);
+  }
+  
+  /* --- Estilos para el pie de página --- */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }

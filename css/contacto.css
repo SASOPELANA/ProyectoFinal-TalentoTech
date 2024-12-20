@@ -19,7 +19,7 @@
   }
   
   nav {
-    background-image: url("../img/header1.jpg");
+    background-color: rgb(194, 194, 53);
     background-size: cover;
     background-position: center;
     height: auto;
@@ -31,7 +31,7 @@
   }
   
   nav a:hover {
-    color: rgb(242, 7, 7) !important;
+    color: rgb(220, 20, 60) !important;
     cursor: pointer !important;
   }
   
@@ -59,7 +59,7 @@
   }
   
   .custom-form {
-    background-color: #e77350;
+    background-color: crimson;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
@@ -124,5 +124,5 @@
   }
   
   .redes a:hover {
-    color: #eb483c;
+    color: #dc143c;
   }

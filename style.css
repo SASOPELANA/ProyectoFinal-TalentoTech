@@ -9,6 +9,9 @@
 body {
   padding: 20px;
   flex: 1;
+  background-image: url("./imagenes/fondo-nav2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* --- Encabezado (Header) --- */
@@ -31,6 +34,10 @@ header h1 {
   text-decoration: none; /* Sin subrayado */
 }
 
+.icono-carrito:hover {
+  color: crimson;
+}
+
 /* --- Navegación principal --- */
 nav ul {
   list-style-type: none; /* Sin viñetas */
@@ -48,6 +55,11 @@ nav ul li a {
   text-decoration: none; /* Sin subrayado */
 }
 
+nav ul li a:hover {
+  color: #daf7a6;
+  font-weight: bold;
+}
+
 /* --- Estilos de productos --- */
 .productos {
   display: grid; /* Distribución en cuadrícula */
@@ -59,6 +71,17 @@ nav ul li a {
   margin-top: 20px; /* Margen superior */
 }
 
+.descripcion {
+  color: #333; /* Color del enlace */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold;
+}
+
+.descripcion:hover {
+  color: #8b8c88;
+  font-weight: bold;
+}
+
 .producto {
   background: #f4f4f4; /* Fondo claro */
   padding: 15px; /* Espaciado interno */
@@ -67,10 +90,9 @@ nav ul li a {
 }
 
 .producto img {
-  width: 100%; /* Imagen al 100% */  
+  width: 100%; /* Imagen al 100% */
   border-radius: 5px; /* Bordes redondeados */
 }
-
 
 .producto h2 {
   margin-bottom: 10px; /* Espacio inferior */
@@ -134,16 +156,17 @@ nav ul li a {
 }
 
 .contacto button:hover {
-  background-color: #218838;
+  background-color: #daf7a6;
 }
 
-* Estilos para el pie de página */
+/* estilo para footer */
+
 footer {
-  background-color: #161892;
-  color: rgb(176, 27, 27);
+  background-color: rgba(10, 0, 0, 0.5);
+  color: #fff;
   text-align: center;
   padding: 20px 0;
-  margin-top: auto;
+  margin-top: 30px;
 }
 
 footer p {
@@ -151,15 +174,17 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  font-weight: bold;
 }
 
 footer a {
-  color: #100202c7;
+  color: #fff;
   text-decoration: none;
   margin: 0 10px;
+  box-shadow: 0 0 5px rgba(250, 253, 150, 0.5);
 }
 
 footer a:hover {
   text-decoration: underline;
+  color: #daf7a6;
 }
