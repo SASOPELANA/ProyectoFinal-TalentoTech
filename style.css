@@ -8,6 +8,7 @@
 
 body {
   padding: 20px;
+  flex: 1;
 }
 
 /* --- Encabezado (Header) --- */
@@ -65,6 +66,12 @@ nav ul li a {
   text-align: center; /* Texto centrado */
 }
 
+.producto img {
+  width: 100%; /* Imagen al 100% */  
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+
 .producto h2 {
   margin-bottom: 10px; /* Espacio inferior */
 }
@@ -84,4 +91,75 @@ nav ul li a {
 
 .producto button:hover {
   background: #555; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contacto h2 {
+  text-align: center;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contacto label {
+  margin-top: 10px;
+}
+
+.contacto input,
+.contacto textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contacto button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.contacto button:hover {
+  background-color: #218838;
+}
+
+* Estilos para el pie de página */
+footer {
+  background-color: #161892;
+  color: rgb(176, 27, 27);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+footer a {
+  color: #100202c7;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

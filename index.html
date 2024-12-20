@@ -40,7 +40,7 @@
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Productos</a></li>
-        <li><a href="#">Contactos</a></li>
+        <li><a href="./html/contacto.html" target="_blank" rel="noopener noreferrer">Contactos</a></li>
       </ul>
     </nav>
 
@@ -49,7 +49,8 @@
     <section id="productos" class="productos">
       <!-- productos con descripcion, precio y boton para agregar el carrito -->
       <article class="producto">
-        <h2>Producto 1</h2>
+        <h2>Huawei Mate XT</h2>
+        <img src="./imagenes/el-nuevo-huawei-mate-xt.avif" alt="Producto 1" />
         <p>Descripcion del producto</p>
         <p class="precio">$100</p>
         <button onclick="agregarAlCarrito('Producto 1', 100) ">Agregar</button>
@@ -57,12 +58,49 @@
 
       <!-- productos con descripcion, precio y boton para agregar el carrito -->
       <article class="producto">
-        <h2>Producto 2</h2>
+        <h2>Infinix Note 40 Pro</h2>
+        <img src="./imagenes/infinix-40Pro.png" alt="Producto 2" />
         <p>Descripcion del producto</p>
         <p class="precio">$200</p>
         <button onclick="agregarAlCarrito('Producto 2', 200) ">Agregar</button>
       </article>
+
+      <article class="producto">
+        <h2>Spark 20 Pro</h2>
+        <img src="./imagenes/SPARK-20-PRO.webp" alt="Producto 3" />
+        <p>Descripcion del producto</p>
+        <p class="precio">$300</p>
+        <button onclick="agregarAlCarrito('Producto 3', 300)">Agregar</button>
+      </article>
+
+      <article class="producto">
+        <h2>TCL 40 SE</h2>
+        <img src="./imagenes/tcl-40.jpg" alt="Producto 4" />
+        <p>Descripcion del producto</p>
+        <p class="precio">$400</p>
+        <button onclick="agregarAlCarrito('Producto 4', 400)">Agregar</button>
+      </article>
+
+      <article class="producto">
+        <h2>TCL - 50 PRO NX</h2>
+        <img src="./imagenes/tcl-50pro-blue.webp" alt="Producto 5" />
+        <p>Descripcion del producto</p>
+        <p class="precio">$500</p>
+        <button onclick="agregarAlCarrito('Producto 5', 500)">Agregar</button>
+      </article>
+
     </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2023 Tienda de Compras. Todos los derechos reservados.</p>
+      <p>
+        <a href="#">Política de Privacidad</a> | 
+        <a href="#">Términos de Servicio</a> | 
+        <a href="./html/contacto.html" target="_blank">Contacto</a>
+      </p>
+    </footer>
+
 
     <!-- Importamos archivo JavaScript -->
     <script src="./app.js"></script>
