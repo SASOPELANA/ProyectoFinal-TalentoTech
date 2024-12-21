@@ -1,79 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Proyecto Final Integrador - Talento Tech</title>
-</head>
-<body>
-  <!--   Encabezado principal -->
-     <header>
-        <h1>Ecommerce</h1><!--  Titulo del sitio -->
+  </head>
+  <body>
+    <!--   Encabezado principal -->
+    <header>
+      <h1>Tienda de Compras</h1>
+      <!--  Titulo del sitio -->
       <!--   icono del carrito , con enlace a la pagina del carrito -->
-         <a href="carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
-     </header>
+      <a href="carrito.html" class="icono-carrito"
+        >🛒 <span id="contador-carrito">0</span></a
+      >
+    </header>
 
-<!--      Barra de navegacion principal -->
-      <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="./html/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
+    <!--      Barra de navegacion principal -->
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="./html/contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
 
     <!--   seccion de productos -->
-       <section id="productos" class="productos">
-       <!--  producto con descripcion , precio y bton para agregar al carrito -->
-         <article class="producto">
-          <h2>Huawei Mate XT</h2>
-            <img src="./imagenes/el-nuevo-huawei-mate-xt.avif" alt="Producto 1" />
-            <p><a href="./html/producto1.html" class="descripcion">Descripcion del producto</a></p>
-            <p class="precio">$2500</p>
-            <button onclick="agregarAlcarrito('Producto 1', 2500)" >Agregar</button>
-         </article>
+    <section id="productos" class="productos">
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+        <h2>Huawei Mate XT</h2>
+        <img src="./imagenes/el-nuevo-huawei-mate-xt.avif" alt="Producto 1" />
+        <p>
+          <a href="./html/producto1.html" class="descripcion"
+            >Descripcion del producto</a
+          >
+        </p>
+        <p class="precio">$2500</p>
+        <button onclick="agregarAlcarrito('Producto 1', 2500)">Agregar</button>
+      </article>
 
-                <!--  producto con descripcion , precio y bton para agregar al carrito -->
-                <article class="producto">
-                  <h2>Infinix Note 40 Pro</h2>
-                  <img src="./imagenes/infinix-40Pro.png" alt="Producto 2" />
-                  <p><a href="./html/producto2.html" class="descripcion">Descripcion del producto</a></p>
-                    <p class="precio">$250</p>
-                    <button onclick="agregarAlcarrito('Producto 2', 250)" >Agregar</button>
-                 </article>
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+        <h2>Infinix Note 40 Pro</h2>
+        <img src="./imagenes/infinix-40Pro.png" alt="Producto 2" />
+        <p>
+          <a href="./html/producto2.html" class="descripcion"
+            >Descripcion del producto</a
+          >
+        </p>
+        <p class="precio">$250</p>
+        <button onclick="agregarAlcarrito('Producto 2', 250)">Agregar</button>
+      </article>
 
-                 <!--  producto con descripcion , precio y bton para agregar al carrito -->
-                <article class="producto">
-                  <h2>Spark 20 Pro</h2>
-                  <img src="./imagenes/SPARK-20-PRO.webp" alt="Producto 3" />
-                  <p><a href="./html/producto3.html" class="descripcion">Descripcion del producto</a></p>
-                    <p class="precio">$300</p>
-                    <button onclick="agregarAlcarrito('Producto 3', 300)" >Agregar</button>
-                 </article>
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+        <h2>Spark 20 Pro</h2>
+        <img src="./imagenes/SPARK-20-PRO.webp" alt="Producto 3" />
+        <p>
+          <a href="./html/producto3.html" class="descripcion"
+            >Descripcion del producto</a
+          >
+        </p>
+        <p class="precio">$300</p>
+        <button onclick="agregarAlcarrito('Producto 3', 300)">Agregar</button>
+      </article>
 
-                 <!--  producto con descripcion , precio y bton para agregar al carrito -->
-                <article class="producto">
-                  <h2>TCL 40 SE</h2>
-                  <img src="./imagenes/tcl-40.jpg" alt="Producto 4" />
-                  <p><a href="./html/producto4.html" class="descripcion">Descripcion del producto</a></p>
-                    <p class="precio">$250</p>
-                    <button onclick="agregarAlcarrito('Producto 4', 250)" >Agregar</button>
-                 </article>
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+        <h2>TCL 40 SE</h2>
+        <img src="./imagenes/tcl-40.jpg" alt="Producto 4" />
+        <p>
+          <a href="./html/producto4.html" class="descripcion"
+            >Descripcion del producto</a
+          >
+        </p>
+        <p class="precio">$250</p>
+        <button onclick="agregarAlcarrito('Producto 4', 250)">Agregar</button>
+      </article>
 
-                 <!--  producto con descripcion , precio y bton para agregar al carrito -->
-                <article class="producto">
-                  <h2>TCL - 50 PRO NX</h2>  
-                  <img src="./imagenes/tcl-50pro-blue.webp" alt="Producto 5" />
-                  <p><a href="./html/producto5.html" class="descripcion">Descripcion del producto</a></p>
-                    <p class="precio">$300</p>
-                    <button onclick="agregarAlcarrito('Producto 5', 300)" >Agregar</button>
-                 </article>
+      <!--  producto con descripcion , precio y bton para agregar al carrito -->
+      <article class="producto">
+        <h2>TCL - 50 PRO NX</h2>
+        <img src="./imagenes/tcl-50pro-blue.webp" alt="Producto 5" />
+        <p>
+          <a href="./html/producto5.html" class="descripcion"
+            >Descripcion del producto</a
+          >
+        </p>
+        <p class="precio">$300</p>
+        <button onclick="agregarAlcarrito('Producto 5', 300)">Agregar</button>
+      </article>
+    </section>
 
-       </section>
-
-
-        <!-- Pie de página -->
+    <!-- Pie de página -->
     <footer>
       <p>&copy; 2023 Tienda de Compras. Todos los derechos reservados.</p>
       <p>
@@ -83,8 +104,6 @@
       </p>
     </footer>
 
-
- <script src="./app.js"></script>
-    
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
