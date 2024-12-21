@@ -1,106 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+}
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  background-color: #d0d3d4;
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
 }
 
 main {
-    flex: 1;
-    padding: 20px;
+  flex: 1;
+  padding: 20px;
+}
+
+p {
+  margin: 20px;
+  font-weight: bold;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 ul li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 10px 0;
-    padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 .precio {
-    color: green;
-    font-weight: bold;
-    text-align: center;
+  color: green;
+  font-weight: bold;
+  text-align: center;
 }
 
 button {
-    background-color: #28a745;
-    border: none;
-    color: white;
-    cursor: pointer;
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    text-transform: uppercase;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 40px;
+  width: 50%;
+}
+
+a {
+  text-decoration: none;
 }
 
 button:hover {
-    background-color: #218838;
+  background-color: #696969;
+  font-weight: bold;
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Empuja el pie de página hacia abajo */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Empuja el pie de página hacia abajo */
+  text-shadow: 2px 2px 6px rgba(0, 0, 250, 0.7);
+  font-weight: bold;
 }
 
 /* Media Queries para hacer la página responsive */
 @media (max-width: 768px) {
-    main {
-        padding: 10px;
-    }
+  main {
+    padding: 10px;
+  }
 
-    ul li {
-        font-size: 14px;
-    }
+  ul li {
+    font-size: 14px;
+  }
 
-    button {
-        width: 100%;
-    }
+  button {
+    width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    header {
-        padding: 10px;
-    }
+  header {
+    padding: 10px;
+  }
 
-    h2 {
-        font-size: 18px;
-    }
+  h2 {
+    font-size: 18px;
+  }
 
-    ul li {
-        font-size: 12px;
-    }
+  ul li {
+    font-size: 12px;
+  }
 
-    button {
-        padding: 8px;
-    }
+  button {
+    padding: 8px;
+  }
 }

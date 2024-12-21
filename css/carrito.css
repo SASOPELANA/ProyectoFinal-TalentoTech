@@ -1,78 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
+}
+
 /* Asegúrate de que el contenedor principal tenga una altura mínima del 100% */
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* El contenedor principal debe ocupar todo el espacio disponible */
-  body {
-    flex: 1;
-    padding: 20px;
-    background-color: rgb(140, 140, 145);
-  }
-  
-  /* --- Encabezado (Header) --- */
-  header {
-    display: flex; /* Distribución flexible */
-    justify-content: space-between; /* Elementos separados */
-    align-items: center; /* Alineación vertical */
-    background: #333; /* Color de fondo */
-    color: white; /* Color de texto */
-    padding: 10px 20px; /* Espaciado interno */
-  }
-  
-  header h1 {
-    font-size: 24px; /* Tamaño del título */
-  }
-  
-  .icono-carrito {
-    color: white; /* Color del icono */
-    font-size: 24px; /* Tamaño del icono */
-    text-decoration: none; /* Sin subrayado */
-  }
-  
-  /* --- Navegación principal --- */
-  nav ul {
-    list-style-type: none; /* Sin viñetas */
-    background: #555; /* Fondo oscuro */
-    padding: 10px; /* Espaciado interno */
-  }
-  
-  nav ul li {
-    display: inline; /* Elementos en línea */
-    margin-right: 15px; /* Separación entre enlaces */
-  }
-  
-  nav ul li a {
-    color: white; /* Color de texto */
-    text-decoration: none; /* Sin subrayado */
-  }
-  
-  nav ul li a:hover {
-    color: rgb(78, 209, 91);
-  }
-  
-  /* --- Estilos para el pie de página --- */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: auto; /* Empuja el pie de página hacia abajo */
-  }
-  
-  footer p {
-    margin: 5px 0;
-  }
-  
-  footer a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* El contenedor principal debe ocupar todo el espacio disponible */
+body {
+  flex: 1;
+  padding: 20px;
+  background-image: url("../imagenes/fondo2.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+/* --- Encabezado (Header) --- */
+header {
+  display: flex; /* Distribución flexible */
+  justify-content: space-between; /* Elementos separados */
+  align-items: center; /* Alineación vertical */
+  background: #333; /* Color de fondo */
+  color: white; /* Color de texto */
+  padding: 10px 20px; /* Espaciado interno */
+}
+
+header h1 {
+  font-size: 24px; /* Tamaño del título */
+}
+
+.icono-carrito {
+  color: white; /* Color del icono */
+  font-size: 24px; /* Tamaño del icono */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* --- Navegación principal --- */
+nav ul {
+  list-style-type: none; /* Sin viñetas */
+  background: #555; /* Fondo oscuro */
+  padding: 10px; /* Espaciado interno */
+}
+
+nav ul li {
+  display: inline; /* Elementos en línea */
+  margin-right: 15px; /* Separación entre enlaces */
+}
+
+nav ul li a {
+  color: white; /* Color de texto */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/* --- Estilos de productos --- */
+.productos {
+  display: grid; /* Distribución en cuadrícula */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Ajuste automático */
+  gap: 20px; /* Separación entre productos */
+  margin-top: 20px; /* Margen superior */
+}
+
+.producto {
+  background: #f4f4f4; /* Fondo claro */
+  padding: 15px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Texto centrado */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.producto h2 {
+  margin-bottom: 10px; /* Espacio inferior */
+  color: crimson;
+}
+
+.carrito-h2 {
+  margin-bottom: 10px; /* Espacio inferior */
+  color: crimson;
+}
+
+.producto .precio {
+  color: green; /* Texto en color verde */
+  font-size: 18px; /* Tamaño de fuente */
+}
+
+.producto button {
+  background: #333; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  border: none; /* Sin bordes */
+  padding: 10px 15px; /* Espaciado interno */
+  cursor: pointer; /* Mano al pasar por encima */
+}
+
+.producto button:hover {
+  background: #555; /* Cambio de color al pasar el cursor */
+  cursor: pointer; /* Mano al pasar por encima */
+}
+
+.finalizar {
+  background: #698; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  border: none; /* Sin bordes */
+  padding: 10px 15px; /* Espaciado interno */
+  cursor: pointer; /* Mano al pasar por encima */
+  border-radius: 30px;
+}
+
+.finalizar:hover {
+  background: #893156; /* Cambio de color al pasar el cursor */
+  cursor: pointer; /* Mano al pasar por encima */
+  font-weight: bold;
+}
+
+#resumen-carrito p {
+  color: #fdffff;
+  font-weight: bold;
+}
+
+/* --- Estilos para el pie de página --- */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Empuja el pie de página hacia abajo */
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
