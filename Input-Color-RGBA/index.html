@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Color RGB</title>
+    <link rel="icon" type="image/png" href="./imagenes/color-pencils.png" />
+    <!-- importamos estilos de letras de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="contenedor-principal">
+      <div class="contenedor-interno">
+        <div class="color">
+          <label for="rojo">Rojo (R)</label>
+          <input id="rojo" type="range" min="0" max="255" value="23" step="1" />
+          <p id="texto-rojo"></p>
+        </div>
+
+        <div class="color">
+          <label for="verde">Verde (G)</label>
+          <input
+            id="verde"
+            type="range"
+            min="0"
+            max="255"
+            value="41"
+            step="1"
+          />
+          <p id="texto-verde"></p>
+        </div>
+
+        <div class="color">
+          <label for="azul">Azul (A)</label>
+          <input id="azul" type="range" min="0" max="255" value="56" step="1" />
+          <p id="texto-azul"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- archivo javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
