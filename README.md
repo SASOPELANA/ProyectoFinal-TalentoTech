@@ -110,8 +110,8 @@ Los colores principales utilizados en el proyecto son:
 ### Paginas Extras
 
 - Colores aleatorios y input color.
-- Pagina de colores aleatorios: [Colores Aleatorios](https://proyecto-final-talento-tech-rose.vercel.app/colores.html)
-- Pagina de input color: [Input Color](https://proyecto-final-talento-tech-rose.vercel.app/input-color.html)
+- Pagina de colores aleatorios: [Colores Aleatorios](https://proyecto-final-talento-tech-rose.vercel.app/ColoresAleatorios/index.html)
+- Pagina de input color: [Input Color](https://proyecto-final-talento-tech-rose.vercel.app/Input-Color-RGBA/index.html)
 
 ## Licencia
 
