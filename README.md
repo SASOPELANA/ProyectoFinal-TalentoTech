@@ -94,18 +94,21 @@ Los colores principales utilizados en el proyecto son:
 
 ### Herramientas Utilizadas
 
-- Nvim - LazyVim (Editor de Texto)
-- Visual Studio Code (Editor de Texto)
-- Node JS - npm (Gestor de Paquetes) - live-server (Servidor Local)
-- Zellij (Multiplexor de Terminal)
-- Git (Control de Versiones)
-- GitHub (Repositorio de Código)
-- Vercel (Hosting Gratuito)
-- FIREFOX (Navegador Web)
-- BRAVE (Navegador Web)
+- [Nvim](https://neovim.io/) - [LazyVim](https://github.com/LazyVim/LazyVim) (Editor de Texto )
+- [WezTerm](https://wezfurlong.org/wezterm/index.html) (Terminal)
+- [Visual Studio Code](https://code.visualstudio.com/) (Editor de Texto)
+- [Node JS](https://nodejs.org/es) - npm (Gestor de Paquetes) - live-server (Servidor Local)
+- [Zellij](https://github.com/zellij-org/zellij) (Multiplexor de Terminal)
+- [Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) (Control de Versiones)
+- [GitHub](https://github.com/) (Repositorio de Código)
+- [Vercel](https://vercel.com/sergios-projects-d7ce3b73) (Hosting Gratuito)
+- [FIREFOX](https://www.mozilla.org/es-AR/firefox/new/) (Navegador Web)
+- [BRAVE](https://brave.com/es/) (Navegador Web)
 - HTML (Lenguaje de Marcado)
 - CSS (Lenguaje de Estilos)
 - JavaScript (Lenguaje de Programación)
+- Sistema Operativo: Linux ([Huayra](https://huayra.educar.gob.ar/) - [Debian 12](https://www.debian.org/download)/ GNU/Linux)
+- Boostrap (Framework CSS) - [Boostrap](https://getbootstrap.com/)
 
 ### Paginas Extras
 
