@@ -92,6 +92,27 @@ Los colores principales utilizados en el proyecto son:
 3. Agrega productos al carrito y navega a la página del carrito (`carrito.html`) para ver los productos agregados.
 4. Finaliza la compra desde la página del carrito.
 
+### Herramientas Utilizadas
+
+- Nvim - LazyVim (Editor de Texto)
+- Visual Studio Code (Editor de Texto)
+- Node JS - npm (Gestor de Paquetes) - live-server (Servidor Local)
+- Zellij (Multiplexor de Terminal)
+- Git (Control de Versiones)
+- GitHub (Repositorio de Código)
+- Vercel (Hosting Gratuito)
+- FIREFOX (Navegador Web)
+- BRAVE (Navegador Web)
+- HTML (Lenguaje de Marcado)
+- CSS (Lenguaje de Estilos)
+- JavaScript (Lenguaje de Programación)
+
+### Paginas Extras
+
+- Colores aleatorios y input color.
+- Pagina de colores aleatorios: [Colores Aleatorios](https://proyecto-final-talento-tech-rose.vercel.app/colores.html)
+- Pagina de input color: [Input Color](https://proyecto-final-talento-tech-rose.vercel.app/input-color.html)
+
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
