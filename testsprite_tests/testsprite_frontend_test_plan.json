@@ -1,61 +1,247 @@
 [
   {
-    "id": "1",
-    "title": "Verificar que la página principal carga correctamente",
-    "requirement": "La página principal carga correctamente",
-    "description": "Verificar que la página principal de la tienda carga sin errores",
-    "priority": "high",
+    "id": "TC001",
+    "title": "Ver listado de productos en la página principal",
+    "description": "Verifica que el catálogo se muestra en la página principal con información básica de cada smartphone.",
+    "category": "Catálogo de Productos",
+    "priority": "High",
     "steps": [
-      "Navegar a http://localhost:5173/",
-      "Esperar a que la página cargue",
-      "Verificar que el título contiene 'Tienda de Smartphones'"
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Agregar\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Imagen del producto\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Nombre del producto\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Precio\" is visible"
+      }
     ]
   },
   {
-    "id": "2",
-    "title": "Verificar que los productos se muestran en la página",
-    "requirement": "Los productos se muestran en la página",
-    "description": "Verificar que los productos del catálogo se renderizan correctamente",
-    "priority": "high",
+    "id": "TC002",
+    "title": "Agregar un producto al carrito desde el catálogo",
+    "description": "Verifica que al pulsar Agregar en un producto, el carrito se actualiza.",
+    "category": "Catálogo de Productos",
+    "priority": "High",
     "steps": [
-      "Navegar a http://localhost:5173/",
-      "Buscar elementos con clase 'producto'",
-      "Verificar que hay al menos 5 productos"
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contador del carrito\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for the first visible product"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"1\" is visible in the cart counter"
+      }
     ]
   },
   {
-    "id": "3",
-    "title": "Verificar que el botón agregar al carrito funciona",
-    "requirement": "El botón agregar al carrito funciona",
-    "description": "Verificar que al hacer clic en 'Agregar' se actualiza el contador del carrito",
-    "priority": "high",
+    "id": "TC003",
+    "title": "Agregar dos productos distintos al carrito incrementa el contador",
+    "description": "Verifica que al agregar dos productos (o dos veces) el contador del carrito aumenta acorde.",
+    "category": "Catálogo de Productos",
+    "priority": "High",
     "steps": [
-      "Navegar a http://localhost:5173/",
-      "Hacer clic en el primer botón 'Agregar'",
-      "Verificar que el contador del carrito muestra 1"
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for the first visible product"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"1\" is visible in the cart counter"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for the second visible product"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"2\" is visible in the cart counter"
+      }
     ]
   },
   {
-    "id": "4",
-    "title": "Verificar navegación a páginas de productos",
-    "requirement": "La navegación a páginas de productos funciona",
-    "description": "Verificar que los enlaces a las páginas de productos funcionan",
-    "priority": "medium",
+    "id": "TC004",
+    "title": "Agregar el mismo producto dos veces incrementa el contador",
+    "description": "Verifica que el contador del carrito se incrementa al agregar repetidamente el mismo producto.",
+    "category": "Catálogo de Productos",
+    "priority": "Medium",
     "steps": [
-      "Navegar a http://localhost:5173/",
-      "Hacer clic en el enlace del primer producto",
-      "Verificar que la URL cambió"
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for the first visible product"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"1\" is visible in the cart counter"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for the first visible product"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"2\" is visible in the cart counter"
+      }
     ]
   },
   {
-    "id": "5",
-    "title": "Verificar que el carrito de compras muestra los productos",
-    "requirement": "El carrito de compras muestra los productos",
-    "description": "Verificar que la página del carrito muestra los productos agregados",
-    "priority": "high",
+    "id": "TC005",
+    "title": "El botón Agregar es visible y accionable en varios productos",
+    "description": "Verifica que múltiples productos en el catálogo tienen botón Agregar visible para interacción.",
+    "category": "Catálogo de Productos",
+    "priority": "Medium",
     "steps": [
-      "Navegar a http://localhost:5173/src/pages/carrito.html",
-      "Verificar que la página carga"
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Agregar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Scroll to the bottom of the product list"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Agregar\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for a product near the bottom of the list"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contador del carrito\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "El contador del carrito permanece visible tras agregar un producto",
+    "description": "Verifica que el contador del carrito no desaparece y refleja el estado después de una acción de agregar.",
+    "category": "Catálogo de Productos",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contador del carrito\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Click on \"Agregar\" button for the first visible product"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Contador del carrito\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"1\" is visible in the cart counter"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Ver la página del carrito y su contenido principal",
+    "description": "Verifica que la página del carrito cargue y muestre elementos básicos de la vista.",
+    "category": "Carrito de Compras",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /src/pages/carrito.html"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL contains \"/src/pages/carrito.html\""
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Carrito\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Total\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Consistencia visual: el total no debe estar ausente",
+    "description": "Verifica que el bloque de total no desaparezca en la vista del carrito (aunque sea 0 o vacío).",
+    "category": "Carrito de Compras",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /src/pages/carrito.html"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify text \"Total\" is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Sección de total de la compra\" is visible"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Renderizado estable: la lista no se duplica al recargar",
+    "description": "Verifica que la lista de productos no se renderice duplicada tras una recarga de página.",
+    "category": "Carrito de Compras",
+    "priority": "Low",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /src/pages/carrito.html"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Lista de productos del carrito\" is visible"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to /src/pages/carrito.html"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify element \"Lista de productos del carrito\" is visible"
+      }
     ]
   }
 ]
