@@ -1,0 +1,18 @@
+{
+  "status": "init",
+  "scope": "codebase",
+  "type": "frontend",
+  "localEndpoint": "http://localhost:5173/",
+  "serverPort": 44199,
+  "executionArgs": {
+    "projectName": "ProyectoFinal-TalentoTech",
+    "projectPath": "/home/sergio/Escritorio/ProyectoFinal-TalentoTech",
+    "testIds": [],
+    "additionalInstruction": "Genera tests de frontend básicos para una tienda de smartphones. La página principal tiene productos con botones de \"Agregar\" que llaman a la función agregarAlcarrito().",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-h3MYjU6JCZYQcmXSDvawBaxqPfXIwp39fpSr3OU5mEpgl2unHUynnWe_09JKmq19vgRy6UBZ8mROwUQHtjlAYf8NQL_m0bimBQQ11Atx04wUmVMzWwrmioRLJNcX5x3YoMQ"
+    }
+  },
+  "proxy": "http://9f6c0b13-c9c5-4adb-94b8-74694436d4a4:2cXiJm0VxwQ22g4eb2q481VMVpWL6jke@tun.testsprite.com:8080"
+}

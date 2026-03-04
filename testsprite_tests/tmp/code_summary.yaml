@@ -1,0 +1,66 @@
+version: "2"
+type: frontend
+tech_stack:
+  - HTML5
+  - CSS3
+  - JavaScript (Vanilla)
+  - Vite
+routes:
+  - path: /
+    file: index.html
+    auth_required: false
+    description: Página principal de la tienda de smartphones
+  - path: /src/pages/carrito.html
+    file: src/pages/carrito.html
+    auth_required: false
+    description: Página del carrito de compras
+  - path: /src/pages/contacto.html
+    file: src/pages/contacto.html
+    auth_required: false
+    description: Página de contacto
+  - path: /apps/colores-aleatorios/index.html
+    file: apps/colores-aleatorios/index.html
+    auth_required: false
+    description: App de colores aleatorios
+  - path: /apps/input-rgba/index.html
+    file: apps/input-rgba/index.html
+    auth_required: false
+    description: App de input RGBA
+features:
+  - name: Catálogo de Productos
+    description: Muestra una lista de smartphones con imagen, nombre, precio y botón de agregar al carrito
+    files:
+      - index.html
+      - src/scripts/app.js
+    entry_route: /
+    user_interactions:
+      - Ver lista de productos en la página principal
+      - Hacer clic en botón "Agregar" para añadir producto al carrito
+      - Ver contador del carrito actualizado
+      - Navegar a páginas de descripción de productos
+    api_calls: []
+    auth_required: false
+  - name: Carrito de Compras
+    description: Permite ver los productos seleccionados, modificar cantidades y calcular total
+    files:
+      - src/pages/carrito.html
+      - src/scripts/app.js
+    entry_route: /src/pages/carrito.html
+    user_interactions:
+      - Ver lista de productos en el carrito
+      - Eliminar productos del carrito
+      - Ver total de la compra
+      - Vaciar el carrito
+    api_calls: []
+    auth_required: false
+  - name: Formulario de Contacto
+    description: Formulario para que los usuarios envíen mensajes
+    files:
+      - src/pages/contacto.html
+    entry_route: /src/pages/contacto.html
+    user_interactions:
+      - Llenar formulario de contacto
+      - Enviar mensaje
+    api_calls: []
+    auth_required: false
+known_limitations: []

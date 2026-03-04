@@ -1,0 +1,61 @@
+[
+  {
+    "id": "1",
+    "title": "Verificar que la página principal carga correctamente",
+    "requirement": "La página principal carga correctamente",
+    "description": "Verificar que la página principal de la tienda carga sin errores",
+    "priority": "high",
+    "steps": [
+      "Navegar a http://localhost:5173/",
+      "Esperar a que la página cargue",
+      "Verificar que el título contiene 'Tienda de Smartphones'"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Verificar que los productos se muestran en la página",
+    "requirement": "Los productos se muestran en la página",
+    "description": "Verificar que los productos del catálogo se renderizan correctamente",
+    "priority": "high",
+    "steps": [
+      "Navegar a http://localhost:5173/",
+      "Buscar elementos con clase 'producto'",
+      "Verificar que hay al menos 5 productos"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Verificar que el botón agregar al carrito funciona",
+    "requirement": "El botón agregar al carrito funciona",
+    "description": "Verificar que al hacer clic en 'Agregar' se actualiza el contador del carrito",
+    "priority": "high",
+    "steps": [
+      "Navegar a http://localhost:5173/",
+      "Hacer clic en el primer botón 'Agregar'",
+      "Verificar que el contador del carrito muestra 1"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Verificar navegación a páginas de productos",
+    "requirement": "La navegación a páginas de productos funciona",
+    "description": "Verificar que los enlaces a las páginas de productos funcionan",
+    "priority": "medium",
+    "steps": [
+      "Navegar a http://localhost:5173/",
+      "Hacer clic en el enlace del primer producto",
+      "Verificar que la URL cambió"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Verificar que el carrito de compras muestra los productos",
+    "requirement": "El carrito de compras muestra los productos",
+    "description": "Verificar que la página del carrito muestra los productos agregados",
+    "priority": "high",
+    "steps": [
+      "Navegar a http://localhost:5173/src/pages/carrito.html",
+      "Verificar que la página carga"
+    ]
+  }
+]

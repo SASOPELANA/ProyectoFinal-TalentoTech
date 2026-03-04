@@ -1,0 +1,28 @@
+{
+  "name": "proyectofinal-talentotech",
+  "version": "1.0.0",
+  "description": "Este proyecto es una tienda de compras en línea que permite a los usuarios agregar productos a un carrito de compras, ver un resumen del carrito y finalizar la compra. El proyecto está construido utilizando HTML, CSS y JavaScript.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SASOPELANA/ProyectoFinal-TalentoTech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SASOPELANA/ProyectoFinal-TalentoTech/issues"
+  },
+  "homepage": "https://github.com/SASOPELANA/ProyectoFinal-TalentoTech#readme",
+  "devDependencies": {
+    "vite": "^7.3.1"
+  }
+}
