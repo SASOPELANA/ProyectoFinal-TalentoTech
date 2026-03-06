@@ -8,8 +8,8 @@ This document provides guidelines for AI coding agents working on this codebase.
 - **Stack**: HTML5, CSS3, Vanilla JavaScript (ES6+)
 - **Framework**: None (Bootstrap 5.3.3 used only on contact page via CDN)
 - **Language**: Code comments and UI text are in **Spanish**
-- **Live URL**: https://proyecto-final-talento-tech-rose.vercel.app/
-- **Repository**: https://github.com/SASOPELANA/ProyectoFinal-TalentoTech
+- **Live URL**: <https://proyecto-final-talento-tech-rose.vercel.app/>
+- **Repository**: <https://github.com/SASOPELANA/ProyectoFinal-TalentoTech>
 
 ## Build/Development Commands
 
@@ -42,6 +42,7 @@ No build step required - this is a static site.
 **No test framework is configured.** This project does not have automated tests.
 
 When making changes:
+
 1. Test manually in browser
 2. Verify cart functionality (add/remove items, localStorage persistence)
 3. Check responsive design at 768px and 480px breakpoints
@@ -78,6 +79,7 @@ When making changes:
 ### JavaScript
 
 **Variables and Functions**
+
 - Use `const` for constants, `let` for variables (never `var`)
 - camelCase for variable and function names
 - Names may be in Spanish: `agregarAlCarrito`, `actualizarContador`
@@ -95,6 +97,7 @@ function generarColorHexAleatorio() {
 ```
 
 **DOM Manipulation**
+
 - Use `document.getElementById()` for IDs
 - Use `document.querySelector()` / `querySelectorAll()` for CSS selectors
 - Prefer `addEventListener()` over inline event handlers
@@ -107,21 +110,25 @@ boton.addEventListener('click', () => {
 ```
 
 **Data Storage**
+
 - Use `localStorage` for cart persistence
 - Store as JSON strings: `localStorage.setItem('carrito', JSON.stringify(carrito))`
 - Parse on read: `JSON.parse(localStorage.getItem('carrito')) || []`
 
 **Comments**
+
 - Write comments in Spanish to match existing code
 - Use `//` for single-line comments
 
 ### CSS
 
 **Naming Conventions**
+
 - kebab-case for class and ID names: `icono-carrito`, `lista-carrito`
 - Descriptive Spanish names preferred: `resumen-carrito`, `total-productos`
 
 **Reset and Box Model**
+
 ```css
 * {
     margin: 0;
@@ -131,11 +138,13 @@ boton.addEventListener('click', () => {
 ```
 
 **Layout**
+
 - Use CSS Grid for page layouts
 - Use Flexbox for component alignment
 - Mobile-first responsive design
 
 **Responsive Breakpoints**
+
 ```css
 /* Tablet */
 @media (max-width: 768px) { }
@@ -145,6 +154,7 @@ boton.addEventListener('click', () => {
 ```
 
 **Colors**
+
 - Hex for simple colors: `#333`, `#f0f0f0`
 - RGB for opacity needs: `rgb(140, 140, 145)`
 - Named colors acceptable: `crimson`, `white`
@@ -152,6 +162,7 @@ boton.addEventListener('click', () => {
 ### HTML
 
 **Document Structure**
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
@@ -175,10 +186,12 @@ boton.addEventListener('click', () => {
 ```
 
 **Semantic Elements**
+
 - Use `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
 - Use `<button>` for clickable actions, `<a>` for navigation
 
 **External Resources**
+
 - Google Fonts via CDN link
 - Bootstrap via CDN (contact page only)
 - Local images in `imagenes/` and `iconos/`
@@ -218,16 +231,19 @@ const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 ## Common Tasks
 
 **Add a new product page:**
+
 1. Copy `html/producto1.html` as template
 2. Update product info, images, prices
 3. Link from `index.html` product grid
 4. Add product image to `imagenes/`
 
 **Modify cart behavior:**
+
 - Main logic in `app.js` (adding items)
 - Cart page logic in `carrito.js` (display, remove, totals)
 - Styles in `css/carrito.css`
 
 **Update styling:**
+
 - Global styles: `style.css`
 - Page-specific: files in `css/` directory
