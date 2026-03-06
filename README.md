@@ -1,121 +1,147 @@
-# ProyectoFinal-TalentoTech
+# TechStore - Tienda de Smartphones
 
-## Descripción
+## Capturas de Pantalla
 
-Este proyecto es una tienda de compras en línea que permite a los usuarios agregar productos a un carrito de compras, ver un resumen del carrito y finalizar la compra. El proyecto está construido utilizando HTML, CSS y JavaScript.
+### Pagina Principal
+
+![Pagina Principal](src/assets/images/screenshot-home.png)
+
+### Detalle de Producto
+
+![Detalle de Producto](src/assets/images/screenshot-producto.png)
+
+### Carrito de Compras
+
+![Carrito](src/assets/images/screenshot-carrito.png)
+
+## Descripcion
+
+TechStore es una tienda online de smartphones premium. El proyecto esta construido con HTML, CSS y JavaScript vanilla, utilizando Vite como bundler para el desarrollo.
 
 ## Estructura del Proyecto
 
-El proyecto está organizado en los siguientes archivos y carpetas:
-
-- `index.html`: Página principal de la tienda.
-- `carrito.html`: Página del carrito de compras.
-- `css/`: Carpeta que contiene los archivos de estilos CSS.
-  - `style.css`: Estilos generales para la página principal.
-  - `carrito.css`: Estilos específicos para la página del carrito de compras.
-- `js/`: Carpeta que contiene los archivos JavaScript.
-  - `app.js`: Lógica para agregar productos al carrito y actualizar el contador.
-  - `carrito.js`: Lógica para mostrar los productos en el carrito, eliminar productos y finalizar la compra.
-- `imagenes/`: Carpeta que contiene las imágenes de los productos y otros recursos gráficos.
-- `iconos/`: Carpeta que contiene los iconos utilizados en el proyecto.
+```
+ProyectoFinal-TalentoTech/
+├── index.html                    # Pagina principal con catalogo de productos
+├── src/
+│   ├── assets/
+│   │   └── images/              # Imagenes de productos
+│   ├── pages/
+│   │   ├── about.html           # Pagina Nosotros
+│   │   ├── contacto.html        # Pagina Contacto
+│   │   ├── carrito.html         # Carrito de compras
+│   │   └── productos/           # Paginas de detalle de producto (12 productos)
+│   ├── scripts/
+│   │   ├── app.js               # Logica principal del carrito
+│   │   ├── carrito.js           # Funciones del carrito de compras
+│   │   └── layout.js            # Layout compartido (header/footer)
+│   └── styles/
+│       ├── main.css             # Estilos globales
+│       ├── about.css            # Estilos pagina Nosotros
+│       ├── contacto.css         # Estilos pagina Contacto
+│       ├── carrito.css          # Estilos pagina Carrito
+│       └── productos.css        # Estilos paginas de productos
+├── package.json
+└── vite.config.js
+```
 
 ## Funcionalidades
 
-### Página Principal (`index.html`)
+### Pagina Principal (index.html)
 
-- Muestra una lista de productos disponibles para la compra.
-- Cada producto tiene un botón "Agregar" que permite agregar el producto al carrito.
-- El contador del carrito se actualiza automáticamente cuando se agrega un producto.
+- Catalogo de 12 smartphones con imagen, precio y boton de agregar
+- Hero section con mensaje destacado
+- Navegacion principal
 
-### Página del Carrito (`carrito.html`)
+### Paginas de Producto
 
-- Muestra los productos que han sido agregados al carrito.
-- Permite eliminar productos del carrito.
-- Muestra un resumen del carrito con el total de productos y el importe total.
-- Botón "Finalizar la compra" que simula la finalización de la compra y vacía el carrito.
+- Detalle completo de cada smartphone
+- Especificaciones tecnicas (pantalla, procesador, memoria, camara, bateria)
+- Boton para agregar al carrito
 
-## Archivos CSS
+### Carrito de Compras
 
-### `style.css`
+- Lista de productos agregados
+- Eliminar productos individuales
+- Resumen con total
+- Persistencia en localStorage (el carrito se mantiene al navegar)
 
-- Define los estilos generales para la página principal, incluyendo el encabezado, la barra de navegación y las tarjetas de productos.
-- Asegura que el pie de página esté siempre en la parte inferior de la página.
+### Layout Compartido
 
-### `carrito.css`
+- Header con logo y boton de carrito (contador dinamico)
+- Navegacion con enlaces a todas las secciones
+- Footer completo con 4 columnas: Brand, Enlaces, Legal, Contacto
+- Implementado via layout.js para consistencia en todas las paginas
 
-- Define los estilos específicos para la página del carrito de compras.
-- Asegura que el pie de página esté siempre en la parte inferior de la página.
+### Pagina Nosotros
 
-## Colores Utilizados
+- Historia de la empresa
+- Valores y beneficios
+- Equipo de trabajo
 
-Los colores principales utilizados en el proyecto son:
+### Pagina Contacto
 
-- **Fondo del cuerpo**: `rgb(140, 140, 145)`
-- **Encabezado y pie de página**: `#333` (gris oscuro)
-- **Texto del encabezado y pie de página**: `white` (blanco)
-- **Fondo de la barra de navegación**: `#555` (gris medio)
-- **Color de los enlaces de navegación**: `white` (blanco)
-- **Color de los enlaces de navegación al pasar el cursor**: `rgb(78, 209, 91)` (verde claro)
-- **Fondo de los productos**: `white` (blanco)
-- **Borde de los productos**: `#ddd` (gris claro)
-- **Color del botón de compra**: `#28a745` (verde)
-- **Color del botón de compra al pasar el cursor**: `#218838` (verde oscuro)
+- Formulario de contacto
+- Informacion de contacto
 
-## Archivos JavaScript
+## Tecnologias Utilizadas
 
-### `app.js`
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Vite (bundler y servidor de desarrollo)
+- LocalStorage (persistencia del carrito)
 
-- Define la lógica para agregar productos al carrito y actualizar el contador del carrito.
-- Guarda el contenido del carrito en el almacenamiento local antes de cerrar la página.
+## Como Ejecutar el Proyecto
 
-### `carrito.js`
+1. Clonar el repositorio:
 
-- Define la lógica para mostrar los productos en el carrito, eliminar productos y finalizar la compra.
-- Carga el carrito desde el almacenamiento local al cargar la página.
+```bash
+git clone https://github.com/SASOPELANA/ProyectoFinal-TalentoTech
+```
 
-### Uso de Git y GitHub
+1. Instalar dependencias:
 
-- Url del repositorio: (https://github.com/SASOPELANA/ProyectoFinal-TalentoTech)
-- Se utilizó Git para el control de versiones del proyecto.
-- Se creó un repositorio en GitHub para almacenar el proyecto (ProyectoFinal-TalentoTech).
-- Uso de comandos básicos de Git como `git init`, `git add`, `git commit`, `git push`, `git pull`, `git branch`, `git checkout`, entre otros.
+```bash
+npm install
+```
 
-### Vercel
+1. Iniciar servidor de desarrollo:
 
-- Uso del hosting gratuito de Vercel para desplegar el proyecto. Sincronización con el repositorio de GitHub para realizar despliegues automáticos.
-- URL del proyecto desplegado: [ProyectoFinal-TalentoTech](https://proyecto-final-talento-tech-rose.vercel.app/)
+```bash
+npm run dev
+```
 
-## Cómo Ejecutar el Proyecto
+1. Abrir en el navegador: <http://localhost:5173>
 
-1. Clona el repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador para ver la página principal de la tienda.
-3. Agrega productos al carrito y navega a la página del carrito (`carrito.html`) para ver los productos agregados.
-4. Finaliza la compra desde la página del carrito.
+## Scripts Disponibles
 
-### Herramientas Utilizadas
+- `npm run dev` - Inicia el servidor de desarrollo
+- `npm run build` - Genera la build de produccion
+- `npm run preview` - Previsualiza la build de produccion
 
-- [Nvim](https://neovim.io/) - [LazyVim](https://github.com/LazyVim/LazyVim) (Editor de Texto )
-- [WezTerm](https://wezfurlong.org/wezterm/index.html) (Terminal)
-- [Visual Studio Code](https://code.visualstudio.com/) (Editor de Texto)
-- [Node JS](https://nodejs.org/es) - npm (Gestor de Paquetes) - live-server (Servidor Local)
-- [Zellij](https://github.com/zellij-org/zellij) (Multiplexor de Terminal)
-- [Git](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository) (Control de Versiones)
-- [GitHub](https://github.com/) (Repositorio de Código)
-- [Vercel](https://vercel.com/sergios-projects-d7ce3b73) (Hosting Gratuito)
-- [FIREFOX](https://www.mozilla.org/es-AR/firefox/new/) (Navegador Web)
-- [BRAVE](https://brave.com/es/) (Navegador Web)
-- HTML (Lenguaje de Marcado)
-- CSS (Lenguaje de Estilos)
-- JavaScript (Lenguaje de Programación)
-- Sistema Operativo: Linux ([Huayra](https://huayra.educar.gob.ar/) - [Debian 12](https://www.debian.org/download)/ GNU/Linux)
-- Boostrap (Framework CSS) - [Boostrap](https://getbootstrap.com/)
+## Despliegue
 
-### Paginas Extras
+El proyecto esta desplegado en Vercel:
 
-- Colores aleatorios y input color.
-- Pagina de colores aleatorios: [Colores Aleatorios](https://proyecto-final-talento-tech-rose.vercel.app/ColoresAleatorios/index.html)
-- Pagina de input color: [Input Color](https://proyecto-final-talento-tech-rose.vercel.app/Input-Color-RGBA/index.html)
+- URL: <https://proyecto-final-talento-tech-rose.vercel.app/>
+
+## Repositorio
+
+- GitHub: <https://github.com/SASOPELANA/ProyectoFinal-TalentoTech>
+
+## Herramientas de Desarrollo
+
+- Neovim / LazyVim (Editor)
+- Visual Studio Code (Editor)
+- WezTerm (Terminal)
+- Zellij (Multiplexor de terminal)
+- Git (Control de versiones)
+- GitHub (Repositorio)
+- Vercel (Hosting)
+- Firefox / Brave (Navegadores)
+- Linux Debian 13
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto esta bajo la Licencia MIT.
