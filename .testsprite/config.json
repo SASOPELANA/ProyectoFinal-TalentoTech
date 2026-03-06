@@ -1,8 +1,0 @@
-{
-  "testType": "frontend",
-  "port": 5173,
-  "pathname": "",
-  "projectRoot": "/home/sergio/Escritorio/ProyectoFinal-TalentoTech",
-  "testScope": "codebase",
-  "serverMode": "development"
-}
